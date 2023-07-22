@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Play Rock Paper Scissors</title>
+    <link rel="stylesheet" href="main.scss">
+  </head>
+  <body>
+	<script src="index.js" type="module"></script>
+	<header>
+		<h1>Rock<br>Paper<br>Scissors</h1>
+		<div class='score'>
+			<h2 class='score__title'>Score<br><span class='score__content'>15</span></h2>
+		</div>
+	</header>
+	
+	<section>
+		<button data-option='rock'>Rock</button>
+		<button data-option='paper'>Paper</button>
+		<button data-option='scissors'>Scissors</button>
+	</section>
+	
+	<section>
+		<div id='humanChoice'></div>
+		<div id='computerChoice'></div>
+		<div id='result'></div>
+	</section>
+	
+	<footer>
+		<button>Rules</button>
+	</footer>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
+

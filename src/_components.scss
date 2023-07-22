@@ -1,0 +1,46 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(0deg, $dark-blue 0%, $light-blue 100%);
+	background: radial-gradient(ellipse at top, $light-blue, transparent),
+		radial-gradient(ellipse at bottom, $dark-blue, transparent);
+	background: radial-gradient($dark-blue, $light-blue);
+	color: $font-color;
+	height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	border: 3px solid $gray;
+	border-radius: $border-round;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+	margin: 24px;
+	padding: 8px;
+
+	.score {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: $white;
+		border: 1px solid $white;
+		border-radius: $border-round;
+		width: 70px;
+		height: 70px;
+
+        &__title {
+            color: $light-blue;
+            text-transform: uppercase;
+        }
+
+        &__content {
+            display: block;
+            color: $gray;
+            font-size: 2rem;
+            text-align: center;
+        }
+	}
+}
