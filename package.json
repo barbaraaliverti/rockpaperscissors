@@ -2,8 +2,8 @@
   "name": "rock-paper-scissors",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
